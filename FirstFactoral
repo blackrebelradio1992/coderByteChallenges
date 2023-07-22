@@ -1,0 +1,18 @@
+function FirstFactorial(num) { 
+// num cand be interpeted as its own array or more simply you van take a variable or number input into a for loop without creating an array of number from it
+// so since you need a decreasign array of numbers starting form 1 subtracted from the input you set i equal to that./
+   if (num === 0 || num === 1){
+     return 1
+   }
+
+   for (let i = num - 1 ; i >= 1; i--) {
+     num = num * i;
+   }
+   
+  return num; 
+  
+
+}
+   
+// keep this function call here 
+console.log(FirstFactorial(readline()));
